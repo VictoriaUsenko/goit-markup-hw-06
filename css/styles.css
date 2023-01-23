@@ -696,14 +696,29 @@ body {
   position: absolute;
   top: 24px;
   right: 24px;
+  
 
   width: 24px;
   height: 24px;
   padding: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: var(--text-light-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: background-color var(--transition), fill var(--transition);
+  cursor: pointer;
+}
+
+.modal-close:hover{
+  border: none
+  fill: var(--primery-white-color);
+  background-color: var(--accent-color);
+
 }
 
 .modal-title {
@@ -754,8 +769,8 @@ body {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  width: 18px;
-  height: 24px;
+  /* width: 18px;
+  height: 24px; */
 
   fill: var(--primery-color);
 }
