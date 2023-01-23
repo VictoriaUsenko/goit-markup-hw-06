@@ -710,15 +710,20 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: background-color var(--transition), fill var(--transition);
+  transition: background-color var(--transition);
   cursor: pointer;
 }
 
+.modal-close-icon{
+  transition: fill var(--transition);
+}
 .modal-close:hover{
-  border: none
-  fill: var(--primery-white-color);
+  border: none;
   background-color: var(--accent-color);
+}
 
+.modal-close:hover > .modal-close-icon{
+ fill: var(--primery-white-color);
 }
 
 .modal-title {
